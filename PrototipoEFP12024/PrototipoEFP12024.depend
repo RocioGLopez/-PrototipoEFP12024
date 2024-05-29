@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1716997363 source:c:\users\usuario\desktop\rocio\progra 1\0 examen final\-prototipoefp12024\prototipoefp12024\src\bitacora.cpp
+	"Bitacora.h"
+	<iostream>
+	<fstream>
+	<conio.h>
+	<ctime>
+	<stdlib.h>
+	<iomanip>
+
+1716997408 c:\users\usuario\desktop\rocio\progra 1\0 examen final\-prototipoefp12024\prototipoefp12024\include\bitacora.h
+	<iostream>
+
+1716998608 source:c:\users\usuario\desktop\rocio\progra 1\0 examen final\-prototipoefp12024\prototipoefp12024\src\login.cpp
+	"Login.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Bitacora.h"
+
+1716997808 c:\users\usuario\desktop\rocio\progra 1\0 examen final\-prototipoefp12024\prototipoefp12024\include\login.h
+	<iostream>
+	<fstream>
+	<string>
+
+1716998640 source:c:\users\usuario\desktop\rocio\progra 1\0 examen final\-prototipoefp12024\prototipoefp12024\main.cpp
+	<iostream>
+	<cstdlib>
+	<conio.h>
+	"Login.h"
+	"Bitacora.h"
+
