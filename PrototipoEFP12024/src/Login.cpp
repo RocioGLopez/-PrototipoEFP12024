@@ -127,9 +127,10 @@ bool Login::VerificarUsuario()
     return true;
     }
    else
+
     {
 	system("cls");
-    cout << "\n\n\t\t\tPERDIO LOS 3 INTENTOS" << endl;
+    cout << "\n\n\t\t\tPERDIO LOS 3 INTENTOS, vuelva a intentar mas tarde" << endl;
      system("pause");
      exit(0);
 
