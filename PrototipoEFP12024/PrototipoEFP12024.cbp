@@ -36,9 +36,11 @@
 		</Compiler>
 		<Unit filename="include/Bitacora.h" />
 		<Unit filename="include/Login.h" />
+		<Unit filename="include/empleado.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Bitacora.cpp" />
 		<Unit filename="src/Login.cpp" />
+		<Unit filename="src/empleado.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

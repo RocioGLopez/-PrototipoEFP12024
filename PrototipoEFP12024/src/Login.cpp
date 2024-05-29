@@ -121,10 +121,10 @@ bool Login::VerificarUsuario()
    if (encontrado)
     {
     	         system("cls");
+    cout << "\n\ROCIO GUISELL LOPEZ ESPINOZA " << endl;
+    cout << "\n\CARNET: 9959-23-740" << endl;
 
     cout << "\n\t----- Bienvenido " << usuario << " -----" << endl;
-    cout << "\n\ROCIO GUISELL LÓPEZ ESPINOZA " << endl;
-    cout << "\n\CARNET: 9959-23-740" << endl;
 
      system("pause");
     return true;
