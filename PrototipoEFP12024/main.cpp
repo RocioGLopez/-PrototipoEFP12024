@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <conio.h>
-#include "usuarios.h"
+//#include "usuarios.h"
 #include "Login.h"
 #include "Bitacora.h"
 
@@ -134,8 +134,8 @@ void catalogos()
             break;
         case 3:
         {
-            usuarios usuario;
-            usuario.menuUsuarios();
+//            usuarios usuario;
+//            usuario.menuUsuarios();
             break;
         }
         case 4:
