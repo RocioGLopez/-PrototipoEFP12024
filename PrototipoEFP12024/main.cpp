@@ -46,7 +46,7 @@ void menuGeneral()
     {
         system("cls");
         cout << "\t\t\t-------------------------------" << endl;
-        cout << "\t\t\t|   SISTEMA DE GESTION UMG     |" << endl;
+        cout << "\t\t\t|   SISTEMA DE GESTION ROCIO GUISELL LOPEZ ESPINOZA 9959-23-740    |" << endl;
         cout << "\t\t\t-------------------------------" << endl;
         cout << "\t\t\t 1. Catalogos" << endl;
         cout << "\t\t\t 2. Procesos" << endl;
@@ -91,7 +91,8 @@ void menuGeneral()
 void catalogos()
 {
     // Implementación de catalogo crud
-
+    empleadoCRUD e;
+    e.CrudAula();
 
 }
 

@@ -13,10 +13,8 @@
 
 #include "Bitacora.h"
 
-using namespace std;
-
 //Definir la función principal del CRUD
-void empleadoCrud::CrudAula()
+void empleadoCRUD::CrudAula()
 {
  //implementacion de variables para bitacora
     string codigoPrograma= "5000";
@@ -51,7 +49,7 @@ void empleadoCrud::CrudAula()
 	case 1:
         IngresarAula();
         //registro de bitacora ingreso
-        Auditoria.ingresoBitacora(user,codigoPrograma,"CUA");//CAU = Create empleado
+        Auditoria.ingresoBitacora(user,codigoPrograma,"CUA");//CAU = Create aulas
 
 		break;
     case 2:
@@ -83,7 +81,7 @@ void empleadoCrud::CrudAula()
 }
 
 // Función para agregar un aula
-void empleadoCrud::IngresarAula() {
+void empleadoCRUD::IngresarAula() {
     // Limpiar la pantalla
     system("cls");
     // Mostrar mensaje de agregar aula
@@ -92,15 +90,23 @@ void empleadoCrud::IngresarAula() {
     // Declarar una variable para el aula
     empleado aula;
     // Solicitar al usuario ingresar los datos del aula
-    cout << "Ingrese el codigo del aula: ";
+    cout << "Ingrese el codigo del empleado: ";
     cin >> aula.codigo;
     cin.ignore();
 
-    cout << "Ingrese el nombre del aula: ";
+    cout << "Ingrese el nombre del empleado: ";
     cin.getline(aula.nombre, 50);
 
-    cout << "Ingrese la estatus de la aula: ";
+    cout << "Ingrese la estatus de la empleado: ";
     cin.getline(aula.estatus, 50);
+
+       cout << "Ingrese la departamento de la empleado: ";
+    cin.getline(aula.depa, 50);
+
+       cout << "Ingrese la sueldo de la empleado: ";
+    cin.getline(aula.sueldo, 50);
+
+
 
     // Abrir el archivo de empleado en modo binario para agregar el aula
     ofstream archivo("empleado.dat", ios::binary | ios::app);
@@ -108,14 +114,14 @@ void empleadoCrud::IngresarAula() {
     archivo.write(reinterpret_cast<const char*>(&aula), sizeof(empleado));
     archivo.close(); // Cerrar el archivo
 
-    cout << "aula agregada exitosamente!" << endl; // Mostrar mensaje de éxito
+    cout << "empleado agregada exitosamente!" << endl; // Mostrar mensaje de éxito
 }
 
 // Función para modificar un aula
-void empleadoCrud::ModificarAula() {
+void empleadoCRUD::ModificarAula() {
     int codigo;
     // Solicitar al usuario ingresar el código del aula a modificar
-    cout << "Ingrese el codigo de la aula a modificar: ";
+    cout << "Ingrese el codigo de la empleado a modificar: ";
     cin >> codigo;
 
     // Abrir el archivo de empleado en modo lectura y escritura binaria
@@ -133,11 +139,11 @@ void empleadoCrud::ModificarAula() {
     while (archivo.read(reinterpret_cast<char*>(&aula), sizeof(empleado))) {
         if (aula.codigo == codigo) {
             // Solicitar al usuario ingresar los nuevos datos del aula
-            cout << "Ingrese el nuevo nombre de la aula: ";
+            cout << "Ingrese el nuevo nombre de la empleado: ";
             cin.ignore();
             cin.getline(aula.nombre, 50);
 
-            cout << "Ingrese el nuevo estatus de la aula: ";
+            cout << "Ingrese el nuevo estatus de la empleado: ";
             cin.getline(aula.estatus, 50);
 
             // Mover el puntero de escritura hacia atrás para sobreescribir el aula
@@ -153,7 +159,7 @@ void empleadoCrud::ModificarAula() {
     archivo.close(); // Cerrar el archivo
 
     if (!encontrada) {
-        cout << "No se encontró la aula con el codigo ingresado." << endl;
+        cout << "No se encontró la empleado con el codigo ingresado." << endl;
     } else {
         cout << "aula modificada exitosamente!" << endl;
     }
@@ -161,10 +167,10 @@ void empleadoCrud::ModificarAula() {
 }
 
 // Función para eliminar un aula
-void empleadoCrud::BorrarAula() {
+void empleadoCRUD::BorrarAula() {
     int codigo;
     // Solicitar al usuario ingresar el código del aula a eliminar
-    cout << "Ingrese el codigo de la aula a eliminar: ";
+    cout << "Ingrese el codigo de la empleado a eliminar: ";
     cin >> codigo;
 
     // Abrir el archivo de empleado en modo lectura binaria
@@ -197,15 +203,15 @@ void empleadoCrud::BorrarAula() {
     rename("empleado_tmp.dat", "empleado.dat");
 
     if (eliminada) {
-        cout << "aula eliminada exitosamente!" << endl;
+        cout << "empleado eliminada exitosamente!" << endl;
     } else {
-        cout << "No se encontró la aula con el codigo ingresado." << endl;
+        cout << "No se encontró la empleado con el codigo ingresado." << endl;
     }
 
 }
 
 // Función para desplegar todas las empleado registradas
-void empleadoCrud::DesplegarAula() {
+void empleadoCRUD::DesplegarAula() {
     // Limpiar la pantalla
     system("cls");
     // Mostrar mensaje de despliegue de empleado registradas

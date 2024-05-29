@@ -26,10 +26,27 @@
 	<fstream>
 	<string>
 
-1716999009 source:c:\users\usuario\desktop\rocio\progra 1\0 examen final\-prototipoefp12024\prototipoefp12024\main.cpp
+1717001405 source:c:\users\usuario\desktop\rocio\progra 1\0 examen final\-prototipoefp12024\prototipoefp12024\main.cpp
 	<iostream>
 	<cstdlib>
 	<conio.h>
 	"Login.h"
+	"Bitacora.h"
+	"empleado.h"
+
+1717001664 c:\users\usuario\desktop\rocio\progra 1\0 examen final\-prototipoefp12024\prototipoefp12024\include\empleado.h
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1717001218 source:c:\users\usuario\desktop\rocio\progra 1\0 examen final\-prototipoefp12024\prototipoefp12024\src\empleado.cpp
+	"empleado.h"
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
 	"Bitacora.h"
 

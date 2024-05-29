@@ -9,31 +9,28 @@
 
 using namespace std;// Se utiliza el espacio de nombres estandar.
 
+
+//Definir la función principal del CRUD
 struct empleado
 {
+    int codigo;// Código del aula.
+    char nombre [45];// Nombre del aula.
+    char estatus [1];// Estatus del aula.
+     int sueldo;// Código del aula
+       char depa [1];// Estatus del aula.
 
-    int codigoEstudiante; // Variable para almacenar el código del estudiante
-    char nombreEstudiante [45]; // Variable para almacenar el nombre del estudiante
-    char nombreCurso[45]; // Variable para almacenar el nombre del curso
-        int np1; // Nota parcial 1
-    int np2; // Nota parcial 2
-    int za;  // Nota de ZA
-    int ef;  // Nota de EF
-    int nf;  // Nota final
 };
-class empleadoCrud
+// Definición de la clase AulasCRUD que proporciona mótodos para realizar operaciones CRUD en aulas.
+class empleadoCRUD
 {
-    public:
-        void CrudNota();
-        void IngresarNota();
-        void ModificarNota();
-        void BorrarNota();
-        void DesplegarNotas();
-        void RegistrarBitacora(string usuario, string accion);
-        void DesplegarNotasPorCurso(const string& nombreCursoDeseado); // Nuevo método para desplegar notas por curso
-        void LeerNotasPorNombre(const char* nombre);
-        bool validarAlumno(int codigoEstudiante);
+    public:// Mótodos para realizar operaciones CRUD.
+        void IngresarAula();
+        void ModificarAula();
+        void BorrarAula();
+        void DesplegarAula();
+        void CrudAula();
+        void visualizarBitacora();
 
 };
 
-#endif // EMPLEADO_H
+#endif
